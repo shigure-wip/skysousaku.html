@@ -1,0 +1,65 @@
+main {
+  /* background: #eefcff; */
+  padding: 0 20px;
+}
+h1 {
+  font-size: 12px;
+}
+html {
+  font-size: 14px;
+}
+/* ZenGothicNew */
+.zen-kaku-gothic-new-regular {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background: #eefcff;
+  margin: 0;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+.topimg {
+  width: 100%;
+  height: auto;
+}
+
+.tiktok,
+.twitter {
+  width: fit-content;
+  text-align: center;
+}
+.sns-link {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+}
+
+/* pc表示の場合↓ */
+@media (width>=768px) {
+  html {
+    font-size: 16px;
+  }
+
+  .mobile-layer {
+    position: fixed;
+    inset: 0;
+    margin: auto;
+    max-width: 400px;
+    height: calc(100vh - 40px);
+    .mobile-body {
+      background: #eefcff;
+
+      overflow: auto;
+      height: inherit;
+      box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.5);
+    }
+  }
+  .pc-only {
+    height: 100vh;
+    background: url("../image/pc-background.jpg") no-repeat;
+    background-size: cover;
+  }
+}
