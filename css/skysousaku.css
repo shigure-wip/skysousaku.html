@@ -37,6 +37,27 @@ body {
   gap: 10%;
 }
 
+/* ページ内リンク */
+.pagelink {
+  display: flex;
+
+  justify-content: center;
+  gap: 18%;
+  a {
+    text-decoration: none;
+  }
+  p {
+    line-height: 50px;
+    text-align: center;
+    width: 120px;
+    height: 50px;
+    background-color: rgb(54, 105, 88);
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 20px;
+  }
+}
+
 /* pc表示の場合↓ */
 @media (width>=768px) {
   html {
