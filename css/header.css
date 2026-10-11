@@ -1,3 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+
 body {
   margin: 0;
 }
@@ -13,9 +25,28 @@ body {
   width: 100%;
   height: 60px;
   box-sizing: border-box;
-  padding: 10px;
   background-color: #fff;
   box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.267);
+  position: sticky;
+  top: 0;
+  .header-img {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    .left-logo {
+      width: 60px;
+    }
+    .center-logo {
+      display: flex;
+      margin: 0 auto;
+      font-size: 16px;
+      align-items: center;
+      text-align: center;
+    }
+    .hamburger {
+      margin: 10px;
+    }
+  }
 }
 /* ハンバーガーメニュー */
 .hamburger {
@@ -46,8 +77,19 @@ nav {
   box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.5);
 }
 
+/* メイン */
+.mobile-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.main {
+  margin: 40px 20px;
+}
+
 /* フッター */
 footer {
+  margin-top: auto;
   div {
     width: 100%;
     height: 60px;
@@ -61,5 +103,32 @@ footer {
       margin-top: auto;
       margin-bottom: 0;
     }
+  }
+}
+
+/* pc表示の場合↓ */
+@media (width>=768px) {
+  html {
+    font-size: 16px;
+  }
+
+  .mobile-layer {
+    position: fixed;
+    inset: 0;
+    margin: auto;
+    max-width: 400px;
+    height: calc(100vh - 40px);
+    .mobile-body {
+      background: #eefcff;
+
+      overflow: auto;
+      height: inherit;
+      box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.5);
+    }
+  }
+  .pc-only {
+    height: 100vh;
+    background: url("../image/pc-background.jpg") no-repeat;
+    background-size: cover;
   }
 }

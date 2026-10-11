@@ -28,17 +28,27 @@
         <div class="mobile-body">
           <!-- ヘッダー -->
           <header class="header">
-            <!-- ボタン -->
-            <div id="hamburger" class="hamburger"></div>
-            <nav class="nav">
-              <ul>
-                <li><a href="#">ホーム</a></li>
-                <li><a href="#">キャラ資料</a></li>
-                <li><a href="#">イラスト置き場</a></li>
-                <li><a href="#">考察、自己解釈</a></li>
-                <li><a href="#">ストーリー</a></li>
-              </ul>
-            </nav>
+            <div class="header-img">
+              <div class="left-logo">
+                <img src="image/noroi.png" alt="ロゴ" />
+              </div>
+              <div class="center-logo">
+                <a href="index.html">
+                  <p>のろいもまじないも</p>
+                </a>
+              </div>
+              <!-- ボタン -->
+              <div id="hamburger" class="hamburger"></div>
+              <nav class="nav">
+                <ul>
+                  <li><a href="index.html">ホーム</a></li>
+                  <li><a href="char.html">キャラ資料</a></li>
+                  <li><a href="gallery.html">イラスト置き場</a></li>
+                  <li><a href="kousatsu.html">考察、自己解釈</a></li>
+                  <li><a href="story.html">ストーリー</a></li>
+                </ul>
+              </nav>
+            </div>
           </header>
           <!-- メイン -->
           <main>
@@ -48,14 +58,36 @@
               alt="当サイトを閲覧する上での注意点"
               class="topimg"
             />
-            <p>サイト作成中...</p>
+            <!-- <p>サイト作成中...</p> -->
             <!-- ページ内リンク -->
             <div class="pagelink">
               <div class="pageitiran">
-                <a href=""><p>↓ページ一覧↓</p></a>
+                <a href="#page-link"><p>↓ページ一覧↓</p></a>
               </div>
               <div class="snsitiran">
                 <a href="#sns-link"><p>↓SNS一覧↓</p></a>
+              </div>
+            </div>
+            <!-- ローカルナビ -->
+            <div class="local-nav" id="page-link">
+              <h2>↓ページ一覧↓</h2>
+              <div class="pagelink4">
+                <div class="up">
+                  <div class="page1">
+                    <a href="char.html"><p>キャラ資料</p></a>
+                  </div>
+                  <div class="page2">
+                    <a href="gallery.html"><p>イラスト置き場</p></a>
+                  </div>
+                </div>
+                <div class="down">
+                  <div class="page3">
+                    <a href="kousatsu.html"><p>考察、自己解釈</p></a>
+                  </div>
+                  <div class="page4">
+                    <a href="story.html"><p>ストーリー</p></a>
+                  </div>
+                </div>
               </div>
             </div>
             <!-- SNSリンク -->
