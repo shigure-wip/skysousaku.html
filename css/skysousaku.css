@@ -48,10 +48,11 @@ body {
     text-decoration: none;
   }
   p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 50px;
     text-align: center;
-    width: 200px;
+    width: 150px;
+    max-width: 200px;
     height: 70px;
     background-color: rgb(54, 105, 88);
     color: #fff;
@@ -74,7 +75,8 @@ body {
   div {
     p {
       text-align: center;
-      width: 160px;
+      width: 130px;
+      max-width: 160px;
       height: 80px;
       background-color: #fff;
       color: rgb(54 105 88 / alpha);
