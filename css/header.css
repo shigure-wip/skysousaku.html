@@ -120,10 +120,12 @@ footer {
     height: calc(100vh - 40px);
     .mobile-body {
       background: #eefcff;
-
       overflow: auto;
       height: inherit;
       box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.5);
+    }
+    .mobile-body::-webkit-scrollbar {
+      display: none;
     }
   }
   .pc-only {
